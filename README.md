@@ -21,7 +21,8 @@ Technologies Used
 
 
 Screenshot:
- [C:\Users\goura\OneDrive\Desktop\Full Backend Course\Projects\Notepad-ToDo\public\images\part 1.png](https://github.com/GouravSinghDosad/Simple-To-Do-List-App/blob/main/public/images/part%201.png)
+ ![part 1](https://github.com/user-attachments/assets/66dfe487-88a0-40bd-b781-55a13cba9275)
+
 
 Installation & Setup:-
 
@@ -42,7 +43,8 @@ Installation & Setup:-
    http://localhost:3000
 
 Project Structure:
- C:\Users\goura\OneDrive\Desktop\Full Backend Course\Projects\Notepad-ToDo\public\images\part 2.png
+ ![part 2](https://github.com/user-attachments/assets/1a71211b-8647-400f-94f5-79fdb7f63393)
+
 
 Routes
   ```sh
