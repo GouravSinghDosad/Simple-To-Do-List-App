@@ -19,6 +19,10 @@ Technologies Used
 🎯 Tailwind CSS (Styling, now in public/stylesheets/styles.css)<br>
 🎯 File System (fs) (For storing tasks as text files)<br>
 
+
+Screenshot:
+ C:\Users\goura\OneDrive\Desktop\Full Backend Course\Projects\Notepad-ToDo\public\images\part 1.png
+
 Installation & Setup:-
 
 1. Clone the repository:
@@ -29,12 +33,19 @@ Installation & Setup:-
    ```sh
    npm install
 
-   or if using nodemon:
+3. If using nodemon:
    ```sh
    nodemon index.js
 
-3. Open the app in the browser:
+4. Open the app in the browser:
    ```sh
    http://localhost:3000
 
-Project Structure
+Project Structure:
+ C:\Users\goura\OneDrive\Desktop\Full Backend Course\Projects\Notepad-ToDo\public\images\part 2.png
+
+Routes
+  ```sh
+  GET / → Renders the main page with a list of tasks
+  POST /create → Creates a new task and saves it as a text file
+
