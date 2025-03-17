@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= Document %></title>
+    <!-- imported tailwind CSS for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <!-- main container with full width and minimum screen height -->
+    <div class="main">  
+    
+        <!-- form section with padding and text color white -->
+        <div class="form">
+ 
+            <!-- form to submit a new task -->
+            <form action="/create" method="POST">
+
+                <!-- input field for entering the task title -->
+                <input class="input1" type="text" placeholder="Title goes here" name="title">
+                <!-- this is the text area to enter the details about the task -->
+                <textarea class="input1" placeholder="Enter the details of your task here" name="details"></textarea>
+                <!-- this is the submit button for creating the task -->
+                <input type="submit" value="Create Task">
+
+            </form>
+
+        </div>
+
+        <!-- section to display the created tasks -->
+        <div class="tasks">
+            <!-- check if there are any tasks -->
+            <% if (files.length > 0){ %>
+                <!-- loop through each file(task) -->
+            <% files.forEach(function(val){ %>
+
+                <!-- div is the container for the tasks card and styling is added -->
+                <div class="tasks">
+                    <!-- displays the task tittl(file name) -->
+                    <h2><%= val %></h2>
+                    <!-- link for read more, currently the functionallity is not added -->
+                    <a>Read More...</a>
+                </div>
+              <!-- here the loop ends -->
+                <% })%>
+
+                <!-- executes only if there are no tasks -->
+            <%}  else {%>
+                <h3 class="no-task">No tasks yet.</h3>
+            <% } %>    
+        </div>
+    </div>
+</body>
+</html>
