@@ -21,7 +21,7 @@ Technologies Used
 
 
 Screenshot:
- C:\Users\goura\OneDrive\Desktop\Full Backend Course\Projects\Notepad-ToDo\public\images\part 1.png
+ [C:\Users\goura\OneDrive\Desktop\Full Backend Course\Projects\Notepad-ToDo\public\images\part 1.png](https://github.com/GouravSinghDosad/Simple-To-Do-List-App/blob/main/public/images/part%201.png)
 
 Installation & Setup:-
 
