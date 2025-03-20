@@ -17,6 +17,12 @@ app.get("/",(req,res)=>{                //   route to render the home page
     }) 
 })
 
+app.get("/file/:filename",(req,res)=>{     // here i create a dynamic route
+    fs.readFile(`./files/${req.params.filename}`, "utf-8", (err, filedata) =>{   // when i click on read more on the tasks the show.ejs file will render
+        res.render('show',{filename:req.params.filename,filedata: filedata});    // the heading will show filename, and body will show the data of file
+    }) 
+})
+
 app.post("/create",(req,res)=>{       // route to create new file based on the user input
     fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt`, req.body.details, function(err){});   // removes the white spaces and append '.txt' to the file name 
     res.redirect("/");  // redirecting back to the homepage  

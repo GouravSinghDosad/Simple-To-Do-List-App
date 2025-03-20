@@ -63,3 +63,25 @@ input[type="submit"]{
 .no-task{
     color: #71717a;
 }
+
+.main_1{
+    max-width: 100%;
+    background-color: rgb(36, 36, 36);
+}
+
+.main_2{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.link_1{
+    color: #3b82f6;
+}
+
+.head_1{
+    color: antiquewhite;
+}
+
+.para_1{
+    color: chocolate;
+}
