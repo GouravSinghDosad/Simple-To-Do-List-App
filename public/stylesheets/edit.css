@@ -1,0 +1,53 @@
+
+.main_body{
+    background-color: rgb(26, 26, 26);
+}
+
+.main_box{
+    display: flex;
+    max-width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    flex-direction: column;
+}
+
+.link_1{
+    color: rgb(189, 0, 189);
+    margin-bottom: 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.input1{
+    height: 1.7rem;
+    margin-top: 0.4rem;
+    padding-top: 0.3rem;
+    padding-left: 0.4rem;
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+    background-color: rgb(72, 72, 72);
+    color: rgb(255, 245, 245);
+}
+
+.input1_1{
+    pointer-events: none;
+    color: rgb(177, 177, 177);
+}
+
+.edit_button{
+    margin-top: 2rem;
+    padding: 0.45rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 6rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 68, 255);
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

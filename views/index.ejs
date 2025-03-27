@@ -41,7 +41,12 @@
                     <!-- displays the task tittl(file name) -->
                     <h2><%= val %></h2>
                     <!-- link for read more, currently the functionallity is not added -->
-                    <a href="/file/<%= val %>">Read More...</a>
+
+                    <div class="links">
+                        <a href="/file/<%= val %>">Read More...</a>
+                    <a class="a1 text-zinc-600" href="/edit/<%= val %>">Edit Filename</a>
+                    </div>
+                    
                 </div>
               <!-- here the loop ends -->
                 <% })%>

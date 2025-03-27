@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/edit.css">
+</head>
+<body class="main_body">
+    <div class="main_box">
+        <a class="link_1 " href="/">Go Back to Home</a>
+
+        <form action="/edit" method="POST">
+
+            <!-- input field for entering the task title -->
+            <input class="input1 input1_1" type="text" placeholder="Previous Name" name="previousName" value="<%= filename %>">
+
+            <input class="input1" type="text" placeholder="New Name" name="newName">
+            
+            <input class="edit_button" type="submit" value="Update Name">
+
+        </form>
+    </div>
+</body>
+</html>

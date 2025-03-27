@@ -23,6 +23,17 @@ app.get("/file/:filename",(req,res)=>{     // here i create a dynamic route
     }) 
 })
 
+app.get("/edit/:filename",(req,res)=>{     
+    res.render('edit',{filename:req.params.filename});
+})
+
+app.post("/edit",(req,res)=>{     
+    fs.rename(`./files/${req.body.previousName}`, `./files/${req.body.newName}`, (err) => {
+        res.redirect("/");
+    });
+    
+})
+
 app.post("/create",(req,res)=>{       // route to create new file based on the user input
     fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt`, req.body.details, function(err){});   // removes the white spaces and append '.txt' to the file name 
     res.redirect("/");  // redirecting back to the homepage  
