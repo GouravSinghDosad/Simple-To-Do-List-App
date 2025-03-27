@@ -1,10 +1,10 @@
 
-.main_1{
+.main_1{                           /* body of the HTML file */
     max-width: 100%;
     background-color: rgb(36, 36, 36);
 }
 
-.main_2{
+.main_2{                           /* div container */
     margin-left: 2rem;
     margin-top: 2rem;
 }

@@ -23,13 +23,13 @@ app.get("/file/:filename",(req,res)=>{     // here i create a dynamic route
     }) 
 })
 
-app.get("/edit/:filename",(req,res)=>{     
-    res.render('edit',{filename:req.params.filename});
+app.get("/edit/:filename",(req,res)=>{      // edit button is clicked this path will be caled, "filename" is the name of that file
+    res.render('edit',{filename:req.params.filename});       // this this acces the name of the file, old/current name
 })
 
-app.post("/edit",(req,res)=>{     
-    fs.rename(`./files/${req.body.previousName}`, `./files/${req.body.newName}`, (err) => {
-        res.redirect("/");
+app.post("/edit",(req,res)=>{                     // this post method is used to update the name of the file
+    fs.rename(`./files/${req.body.previousName}`, `./files/${req.body.newName}`, (err) => {    // this will go to the directory and match the file "filename", then rename it
+        res.redirect("/");   // this will redirect to the home page
     });
     
 })

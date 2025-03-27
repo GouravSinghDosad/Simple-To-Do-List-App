@@ -11,12 +11,14 @@
         <a class="link_1 " href="/">Go Back to Home</a>
 
         <form action="/edit" method="POST">
-
-            <!-- input field for entering the task title -->
-            <input class="input1 input1_1" type="text" placeholder="Previous Name" name="previousName" value="<%= filename %>">
-
+            
+            <!-- old name of the file --> 
+            <input class="input1 input1_1" type="text" placeholder="Previous Name" name="previousName" value="<%= filename %>">  
+            
+            <!-- new name for the file -->
             <input class="input1" type="text" placeholder="New Name" name="newName">
             
+            <!-- Button to update the filename -->
             <input class="edit_button" type="submit" value="Update Name">
 
         </form>

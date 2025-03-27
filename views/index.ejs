@@ -18,12 +18,12 @@
             <!-- form to submit a new task -->
             <form action="/create" method="POST">
 
-                <!-- input field for entering the task title -->
-                <input class="input1" type="text" placeholder="Title goes here" name="title">
-                <!-- this is the text area to enter the details about the task -->
-                <textarea class="input1" placeholder="Enter the details of your task here" name="details"></textarea>
-                <!-- this is the submit button for creating the task -->
-                <input type="submit" value="Create Task">
+                
+                <input class="input1" type="text" placeholder="Title goes here" name="title">   <!-- input field for entering the task title -->
+                
+                <textarea class="input1" placeholder="Enter the details of your task here" name="details"></textarea>  <!-- this is the text area to enter the details about the task -->
+                
+                <input type="submit" value="Create Task">              <!-- this is the submit button for creating the task -->
 
             </form>
 
@@ -31,20 +31,19 @@
 
         <!-- section to display the created tasks -->
         <div class="tasks">
-            <!-- check if there are any tasks -->
-            <% if (files.length > 0){ %>
-                <!-- loop through each file(task) -->
-            <% files.forEach(function(val){ %>
+            
+            <% if (files.length > 0){ %>             <!-- check if there are any tasks -->
+                
+            <% files.forEach(function(val){ %>       <!-- loop through each file(task) -->
 
                 <!-- div is the container for the tasks card and styling is added -->
                 <div class="tasks">
-                    <!-- displays the task tittl(file name) -->
-                    <h2><%= val %></h2>
-                    <!-- link for read more, currently the functionallity is not added -->
-
+                    
+                    <h2><%= val %></h2>                           <!-- displays the task tittl(file name) -->
+      
                     <div class="links">
-                        <a href="/file/<%= val %>">Read More...</a>
-                    <a class="a1 text-zinc-600" href="/edit/<%= val %>">Edit Filename</a>
+                        <a href="/file/<%= val %>">Read More...</a>                            <!-- to to read the content inside the file -->
+                        <a class="a1 text-zinc-600" href="/edit/<%= val %>">Edit Filename</a>  <!-- link to edit the name of the file -->
                     </div>
                     
                 </div>
